@@ -30,7 +30,7 @@ MongoDB interactions collection
 - Express
 - LangChain
 - LangGraph
-- Google Gemini (`gemini-2.5-flash` for chat)
+- Google Gemini (`gemini-3.6-flash` for chat)
 - Google Gemini Embeddings (`gemini-embedding-001`)
 - MongoDB Atlas Vector Search
 - Mongoose
@@ -123,7 +123,3 @@ skill_twin
 You can keep it only if it is on the same database/collection configured in `.env` and its vector path is `embedding` with `numDimensions: 768`.
 
 If an existing index has 3072 dimensions or another dimension, recreate/update it so it matches 768. The query vector and stored vectors must have the same dimension.
-
-## GitHub
-
-Do not commit `.env` or `node_modules`. The included `.gitignore` already excludes them.
